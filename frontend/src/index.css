@@ -1,0 +1,35 @@
+@import "tailwindcss";
+/* Light Theme */
+:root[data-theme="light"] {
+  --bg-color: #ffffff;
+  --text-color: #111827;
+}
+
+/* Dark Theme */
+:root[data-theme="dark"] {
+  --bg-color: #292a2a;
+  --text-color: #e5e7eb;
+}
+
+/* Global styles */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.question {
+  background: var(--header-bg);
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.theme-btn {
+  font-size: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--text-color);
+}
